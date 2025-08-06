@@ -27,7 +27,7 @@ namespace WinFormsApp1.Designs
         
             loginBtn = new SiticoneButton
             {
-                Text = "Login",
+                Text = "Continue with Login",
                 Size = new Size(360, 45),
                 Location = new Point(40, 210),
                 FillColor = Color.FromArgb(100, 88, 255),

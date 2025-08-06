@@ -54,7 +54,10 @@ namespace WinFormsApp1.Forms
 
         private void SetupEventHandlers()
         {
-            loginBtn.Click += (_, _) => NormalLoginForm();
+            loginBtn.Click += (_, _) => {
+                var normalLoginForm = new NormalLoginForm();
+                normalLoginForm.Show();
+            };
             googleBtn.Click += (_, _) => OAuthService.HandleGoogleLogin();
             naverBtn.Click += (_, _) => OAuthService.HandleNaverLogin();
             helpBtn.Click += (_, _) => new OAuthSetupForm().ShowDialog();
