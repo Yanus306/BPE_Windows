@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Forms\GoogleLoginForm.cs">
+    <Compile Update="Forms\Login\GoogleLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\InboxForm.cs">
+    <Compile Update="Forms\Login\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\LoginForm.cs">
+    <Compile Update="Forms\Login\NaverLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\MailDetailForm.cs">
+    <Compile Update="Forms\Login\NormalLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\MainDashBoardForm.cs">
+    <Compile Update="Forms\Mail\InboxForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\NaverLoginForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Forms\NormalLoginForm.cs">
+    <Compile Update="Forms\Mail\MailDetailForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\OAuthSetupForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Settings.cs">
+    <Compile Update="Forms\Settings\MainDashBoardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Settings\Settings.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
