@@ -4,13 +4,12 @@ using System.Drawing;
 using System.Windows.Forms;
 using WinFormsApp1.Designs;
 using WinFormsApp1.Services;
+using NormalLoginForm = WinFormsApp1.Forms.NormalLoginForm;
 
 namespace WinFormsApp1.Forms
 {
     public partial class LoginForm : Form
     {
-        private SiticoneTextBox emailBox;
-        private SiticoneTextBox passBox;
         private SiticoneButton loginBtn;
         private SiticoneButton googleBtn;
         private SiticoneButton naverBtn;
@@ -45,8 +44,6 @@ namespace WinFormsApp1.Forms
 
             LoginFormDesign.Build(
                 container,
-                out emailBox,
-                out passBox,
                 out loginBtn,
                 out googleBtn,
                 out naverBtn,
@@ -57,25 +54,10 @@ namespace WinFormsApp1.Forms
 
         private void SetupEventHandlers()
         {
-            loginBtn.Click += (_, _) => HandleLogin();
+            loginBtn.Click += (_, _) => NormalLoginForm();
             googleBtn.Click += (_, _) => OAuthService.HandleGoogleLogin();
             naverBtn.Click += (_, _) => OAuthService.HandleNaverLogin();
             helpBtn.Click += (_, _) => new OAuthSetupForm().ShowDialog();
-        }
-
-        private void HandleLogin()
-        {
-            string email = emailBox.Text.Trim();
-            string password = passBox.Text.Trim();
-
-            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
-            {
-                MessageBox.Show("이메일과 비밀번호를 입력해주세요.", "경고", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            // TODO: 로그인 처리 로직 연결 예정
-            MessageBox.Show($"로그인 시도: {email}", "로그인", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

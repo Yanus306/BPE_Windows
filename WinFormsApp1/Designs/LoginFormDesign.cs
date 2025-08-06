@@ -9,8 +9,6 @@ namespace WinFormsApp1.Designs
     {
         public static void Build(
             Control container,
-            out SiticoneTextBox emailBox,
-            out SiticoneTextBox passBox,
             out SiticoneButton loginBtn,
             out SiticoneButton googleBtn,
             out SiticoneButton naverBtn,
@@ -26,23 +24,7 @@ namespace WinFormsApp1.Designs
                 TextAlign = ContentAlignment.MiddleCenter
             };
 
-            emailBox = new SiticoneTextBox
-            {
-                PlaceholderText = "이메일을 입력하세요",
-                Size = new Size(360, 40),
-                Location = new Point(40, 90),
-                Cursor = Cursors.IBeam
-            };
-
-            passBox = new SiticoneTextBox
-            {
-                PlaceholderText = "비밀번호를 입력하세요",
-                Size = new Size(360, 40),
-                Location = new Point(40, 150),
-                PasswordChar = '●',
-                Cursor = Cursors.IBeam
-            };
-
+        
             loginBtn = new SiticoneButton
             {
                 Text = "Login",
@@ -91,8 +73,6 @@ namespace WinFormsApp1.Designs
             container.Controls.AddRange(new Control[]
             {
                 titleLabel,
-                emailBox,
-                passBox,
                 loginBtn,
                 socialDivider,
                 googleBtn,
