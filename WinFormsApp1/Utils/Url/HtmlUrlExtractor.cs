@@ -22,7 +22,7 @@ namespace WinFormsApp1.Utils
             // 1. HTML 태그 속성 추출 (a, img, iframe 등)
             try
             {
-                var doc = new HtmlDocument();
+                var doc = new HtmlAgilityPack.HtmlDocument();  // 명시적으로 지정!
                 doc.LoadHtml(htmlOrText);
                 foreach (var node in doc.DocumentNode.SelectNodes("//a[@href] | //img[@src] | //iframe[@src]") ?? Enumerable.Empty<HtmlNode>())
                 {
@@ -34,7 +34,7 @@ namespace WinFormsApp1.Utils
             catch { }
 
             // 2. CSS url() 함수 추출
-            foreach (Match m in Regex.Matches(htmlOrText, @"url\(['\"]?(.*?)['\"]?\)", RegexOptions.IgnoreCase))
+            foreach (Match m in Regex.Matches(htmlOrText, @"url\(['""]?(.*?)['""]?\)", RegexOptions.IgnoreCase))
             {
                 if (m.Groups.Count > 1 && !string.IsNullOrWhiteSpace(m.Groups[1].Value))
                     urls.Add(m.Groups[1].Value);
