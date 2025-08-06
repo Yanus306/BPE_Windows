@@ -3,44 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\user\\desktop\\windowsform\\winformsapp1\\winformsapp1\\forms\\oauthsetupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\forms\\oauthsetupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\user\\desktop\\windowsform\\winformsapp1\\winformsapp1\\designs\\loginformdesign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\designs\\loginformdesign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\user\\desktop\\windowsform\\winformsapp1\\winformsapp1\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\user\\desktop\\windowsform\\winformsapp1\\winformsapp1\\designs\\loginformdesign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\designs\\loginformdesign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\winformsapp1\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\user\\desktop\\windowsform\\winformsapp1\\winformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\user\\desktop\\windowsform\\winformsapp1\\winformsapp1\\forms\\oauthsetupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\forms\\oauthsetupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\winformsapp1\\forms\\oauthsetupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\forms\\oauthsetupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\user\\desktop\\windowsform\\winformsapp1\\winformsapp1\\forms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\forms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\user\\desktop\\windowsform\\winformsapp1\\winformsapp1\\forms\\loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\forms\\loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\winformsapp1\\forms\\inboxform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\forms\\inboxform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\user\\desktop\\windowsform\\winformsapp1\\winformsapp1\\forms\\oauthsetupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\forms\\oauthsetupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\winformsapp1\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\user\\desktop\\windowsform\\winformsapp1\\winformsapp1\\forms\\normalloginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\forms\\normalloginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\user\\desktop\\windowsform\\winformsapp1\\winformsapp1\\forms\\loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\forms\\loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\user\\desktop\\windowsform\\winformsapp1\\winformsapp1\\forms\\normalloginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\forms\\normalloginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\winformsapp1\\forms\\inboxform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\forms\\inboxform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{377B110D-8F8C-41C5-AF6E-80BB08A7C9A4}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\winformsapp1\\forms\\maindashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -117,7 +121,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -127,7 +131,7 @@
               "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\LoginForm.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\LoginForm.cs",
               "RelativeToolTip": "WinFormsApp1\\Forms\\LoginForm.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAUwFEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-05T04:29:40.036Z",
               "IsPinned": true,
@@ -135,13 +139,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "LoginFormDesign.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Designs\\LoginFormDesign.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Designs\\LoginFormDesign.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Designs\\LoginFormDesign.cs",
               "RelativeToolTip": "WinFormsApp1\\Designs\\LoginFormDesign.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAADwvzgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-05T05:42:42.645Z",
               "IsPinned": true,
@@ -149,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "NormalLoginForm.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\NormalLoginForm.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\NormalLoginForm.cs",
@@ -167,14 +171,14 @@
               "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\LoginForm.Designer.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\LoginForm.Designer.cs",
               "RelativeToolTip": "WinFormsApp1\\Forms\\LoginForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAD4vxgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-05T06:27:25.715Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "LoginForm.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\LoginForm.cs",
@@ -186,20 +190,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "OAuthSetupForm.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\OAuthSetupForm.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\OAuthSetupForm.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\OAuthSetupForm.cs",
               "RelativeToolTip": "WinFormsApp1\\Forms\\OAuthSetupForm.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAUwC4AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAADwv28AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-05T07:49:08.778Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "OAuthSetupForm.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\OAuthSetupForm.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\OAuthSetupForm.cs",
@@ -211,19 +215,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InboxForm.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\InboxForm.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\InboxForm.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\InboxForm.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "WinFormsApp1\\Forms\\InboxForm.cs [\uB514\uC790\uC778]",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Program.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Program.cs",
+              "RelativeToolTip": "WinFormsApp1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T04:58:08.639Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "WhenOpened": "2025-08-05T04:28:22.432Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "LoginForm.resx",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\LoginForm.resx",
               "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\LoginForm.resx",
@@ -235,57 +240,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Program.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Program.cs",
-              "RelativeToolTip": "WinFormsApp1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "NormalLoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\NormalLoginForm.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\NormalLoginForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\NormalLoginForm.cs",
+              "RelativeToolTip": "WinFormsApp1\\Forms\\NormalLoginForm.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAQwGsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T04:28:22.432Z",
+              "WhenOpened": "2025-08-05T08:47:20.938Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "WinFormsApp1",
+              "DocumentIndex": 10,
+              "Title": "InboxForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\InboxForm.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\InboxForm.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\InboxForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "WinFormsApp1\\Forms\\InboxForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T04:58:08.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WinFormsApp1.csproj",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
               "RelativeDocumentMoniker": "WinFormsApp1\\WinFormsApp1.csproj",
               "ToolTip": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
               "RelativeToolTip": "WinFormsApp1\\WinFormsApp1.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvxAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-05T07:30:43.108Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T07:30:43.108Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "MailDetailForm.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\MailDetailForm.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\MailDetailForm.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\MailDetailForm.cs [\uB514\uC790\uC778]",
               "RelativeToolTip": "WinFormsApp1\\Forms\\MailDetailForm.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T04:45:37.625Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "WhenOpened": "2025-08-05T04:45:37.625Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "MainDashBoardForm.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\MainDashBoardForm.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\MainDashBoardForm.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\MainDashBoardForm.cs [\uB514\uC790\uC778]",
               "RelativeToolTip": "WinFormsApp1\\Forms\\MainDashBoardForm.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T04:45:37.103Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "WhenOpened": "2025-08-05T04:45:37.103Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Settings.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\Settings.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\Settings.cs",
@@ -296,7 +309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "UserSession.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Models\\UserSession.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Models\\UserSession.cs",
@@ -308,7 +321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "EmailMessage.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Models\\EmailMessage.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Models\\EmailMessage.cs",
@@ -320,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Sevices\\EmailService.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Sevices\\EmailService.cs",
@@ -332,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "README.TXT",
               "DocumentMoniker": "C:\\Users\\User\\.nuget\\packages\\metroframework\\1.2.0.3\\README.TXT",
               "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\metroframework\\1.2.0.3\\README.TXT",
@@ -344,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "AuthSession.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Sevices\\AuthSession.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Sevices\\AuthSession.cs",
@@ -356,7 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Settings.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\Settings.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\Settings.cs",
@@ -368,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "InboxForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\InboxForm.Designer.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\InboxForm.Designer.cs",
@@ -376,12 +389,11 @@
               "RelativeToolTip": "WinFormsApp1\\Forms\\InboxForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T04:57:48.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T04:57:48.286Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Config.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Utils\\Config.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Utils\\Config.cs",
@@ -393,19 +405,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "InboxForm.resx",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\InboxForm.resx",
               "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\InboxForm.resx",
               "ToolTip": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\InboxForm.resx",
               "RelativeToolTip": "WinFormsApp1\\Forms\\InboxForm.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-08-05T05:05:44.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T05:05:44.785Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "MailDetailForm.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\MailDetailForm.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\MailDetailForm.cs",
@@ -417,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "MainDashBoardForm.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\MainDashBoardForm.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\MainDashBoardForm.cs",
@@ -429,19 +440,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "MailDetailForm.resx",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\MailDetailForm.resx",
               "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\MailDetailForm.resx",
               "ToolTip": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\MailDetailForm.resx",
               "RelativeToolTip": "WinFormsApp1\\Forms\\MailDetailForm.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-08-05T04:45:40.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T04:45:40.869Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "MainDashBoardForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\windowsform\\WinFormsApp1\\WinFormsApp1\\Forms\\MainDashBoardForm.Designer.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Forms\\MainDashBoardForm.Designer.cs",
@@ -449,8 +459,7 @@
               "RelativeToolTip": "WinFormsApp1\\Forms\\MainDashBoardForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T04:21:19.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T04:21:19.05Z"
             }
           ]
         }

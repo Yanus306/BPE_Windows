@@ -1,96 +1,93 @@
-﻿using ReaLTaiizor.Controls;
-using ReaLTaiizor.Forms;
+﻿// LoginFormDesign.cs (Siticone 최신 방식 적용)
+using Siticone.Desktop.UI.WinForms;
 using System.Drawing;
 using System.Windows.Forms;
-using WinFormsApp1.Forms;
-using WinFormsApp1.Services;
 
 namespace WinFormsApp1.Designs
 {
     public static class LoginFormDesign
     {
         public static void Build(
-            Control container, HopeForm innerForm,
-            out HopeTextBox emailBox,
-            out HopeTextBox passBox,
-            out HopeButton loginBtn,
-            out HopeButton googleBtn,
-            out HopeButton naverBtn,
-            out HopeButton helpBtn)
+            Control container,
+            out SiticoneTextBox emailBox,
+            out SiticoneTextBox passBox,
+            out SiticoneButton loginBtn,
+            out SiticoneButton googleBtn,
+            out SiticoneButton naverBtn,
+            out SiticoneButton helpBtn)
         {
-            innerForm.Size = new Size(420, 580);
-            innerForm.BackColor = Color.White;
-            innerForm.ControlBox = false;
-
             var titleLabel = new Label
             {
                 Text = "Login to Your Account",
                 ForeColor = Color.Black,
                 Font = new Font("Segoe UI", 20, FontStyle.Bold),
                 Size = new Size(400, 50),
-                Location = new Point(10, 20),
+                Location = new Point(20, 20),
                 TextAlign = ContentAlignment.MiddleCenter
             };
 
-            emailBox = new HopeTextBox
+            emailBox = new SiticoneTextBox
             {
-                ForeColor = Color.Gray,
+                PlaceholderText = "이메일을 입력하세요",
                 Size = new Size(360, 40),
-                Location = new Point(30, 90),
-                Text = "이메일을 입력하세요"
+                Location = new Point(40, 90),
+                Cursor = Cursors.IBeam
             };
 
-            passBox = new HopeTextBox
+            passBox = new SiticoneTextBox
             {
-                ForeColor = Color.Gray,
+                PlaceholderText = "비밀번호를 입력하세요",
                 Size = new Size(360, 40),
-                Location = new Point(30, 150),
-                Text = "비밀번호를 입력하세요",
-                UseSystemPasswordChar = true
+                Location = new Point(40, 150),
+                PasswordChar = '●',
+                Cursor = Cursors.IBeam
             };
 
-            loginBtn = new HopeButton
+            loginBtn = new SiticoneButton
             {
                 Text = "Login",
                 Size = new Size(360, 45),
-                Location = new Point(30, 210),
+                Location = new Point(40, 210),
+                FillColor = Color.FromArgb(100, 88, 255),
                 ForeColor = Color.White
             };
 
             var socialDivider = new Label
             {
-                Text = "────────────── or sign in with ──────────────",
+                Text = "─────────── or sign in with ───────────",
                 ForeColor = Color.Gray,
                 Size = new Size(360, 20),
-                Location = new Point(30, 270),
+                Location = new Point(40, 270),
                 TextAlign = ContentAlignment.MiddleCenter
             };
 
-            googleBtn = new HopeButton
+            googleBtn = new SiticoneButton
             {
                 Text = "Continue with Google",
                 Size = new Size(360, 40),
-                Location = new Point(30, 310),
+                Location = new Point(40, 310),
+                FillColor = Color.Red,
                 ForeColor = Color.White
             };
 
-            naverBtn = new HopeButton
+            naverBtn = new SiticoneButton
             {
                 Text = "Continue with Naver",
                 Size = new Size(360, 40),
-                Location = new Point(30, 360),
+                Location = new Point(40, 360),
+                FillColor = Color.Green,
                 ForeColor = Color.White
             };
 
-            helpBtn = new HopeButton
+            helpBtn = new SiticoneButton
             {
                 Text = "Need help with OAuth setup?",
                 Size = new Size(360, 35),
-                Location = new Point(30, 415),
+                Location = new Point(40, 415),
+                FillColor = Color.Gray,
                 ForeColor = Color.White
             };
 
-            // 컨테이너 폼에 추가
             container.Controls.AddRange(new Control[]
             {
                 titleLabel,
@@ -102,11 +99,6 @@ namespace WinFormsApp1.Designs
                 naverBtn,
                 helpBtn
             });
-
-            // 이벤트 핸들러
-            googleBtn.Click += (s, e) => OAuthService.HandleGoogleLogin();
-            naverBtn.Click += (s, e) => OAuthService.HandleNaverLogin();
-            helpBtn.Click += (s, e) => new OAuthSetupForm().ShowDialog();
         }
     }
 }

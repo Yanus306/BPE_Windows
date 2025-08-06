@@ -30,3 +30,5 @@ C:\Users\User\Desktop\windowsform\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-win
 C:\Users\User\Desktop\windowsform\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\MetroFramework.dll
 C:\Users\User\Desktop\windowsform\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Forms.NormalLoginForm.resources
 C:\Users\User\Desktop\windowsform\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\ReaLTaiizor.dll
+C:\Users\User\Desktop\windowsform\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
+C:\Users\User\Desktop\windowsform\WinFormsApp1\WinFormsApp1\bin\Debug\net8.0-windows\Siticone.Desktop.UI.dll

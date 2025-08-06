@@ -1,6 +1,5 @@
-﻿// LoginForm.cs (.NET 8 + ReaLTaiizor 연결 - HopeForm 포함 Wrapper 개선)
-using ReaLTaiizor.Forms;
-using ReaLTaiizor.Controls;
+﻿// LoginForm.cs (.NET 8 + Siticone 최신 방식 적용 - 중복 제거 및 구조화)
+using Siticone.Desktop.UI.WinForms;
 using System.Drawing;
 using System.Windows.Forms;
 using WinFormsApp1.Designs;
@@ -10,16 +9,19 @@ namespace WinFormsApp1.Forms
 {
     public partial class LoginForm : Form
     {
-        private HopeTextBox emailBox;
-        private HopeTextBox passBox;
-        private HopeButton loginBtn;
-        private HopeButton googleBtn;
-        private HopeButton naverBtn;
-        private HopeButton helpBtn;
+        private SiticoneTextBox emailBox;
+        private SiticoneTextBox passBox;
+        private SiticoneButton loginBtn;
+        private SiticoneButton googleBtn;
+        private SiticoneButton naverBtn;
+        private SiticoneButton helpBtn;
+
+        private SiticoneBorderlessForm borderless;
 
         public LoginForm()
         {
             InitializeComponent();
+            SetupEventHandlers();
         }
 
         private void InitializeComponent()
@@ -30,18 +32,19 @@ namespace WinFormsApp1.Forms
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
 
-            // HopeForm을 감싸는 Panel (System.Windows.Forms.Panel 명시)
-            System.Windows.Forms.Panel hopeContainer = new System.Windows.Forms.Panel
+            borderless = new SiticoneBorderlessForm
+            {
+                ContainerControl = this
+            };
+
+            var container = new Panel
             {
                 Dock = DockStyle.Fill,
                 BackColor = Color.White
             };
 
-            // HopeForm은 Panel에 Dock 시켜 내부 컨트롤만 보여주도록 구성
-            HopeForm innerForm = new HopeForm();
             LoginFormDesign.Build(
-                hopeContainer,
-                innerForm,
+                container,
                 out emailBox,
                 out passBox,
                 out loginBtn,
@@ -49,19 +52,15 @@ namespace WinFormsApp1.Forms
                 out naverBtn,
                 out helpBtn);
 
-            // HopeForm의 컨트롤을 Panel에 직접 구성하고, Panel만 메인 Form에 추가
-            this.Controls.Add(hopeContainer);
-
-            // 이벤트 연결
-            SetupEventHandlers();
+            this.Controls.Add(container);
         }
 
         private void SetupEventHandlers()
         {
-            loginBtn.Click += (s, e) => HandleLogin();
-            googleBtn.Click += (s, e) => OAuthService.HandleGoogleLogin();
-            naverBtn.Click += (s, e) => OAuthService.HandleNaverLogin();
-            helpBtn.Click += (s, e) => new OAuthSetupForm().ShowDialog();
+            loginBtn.Click += (_, _) => HandleLogin();
+            googleBtn.Click += (_, _) => OAuthService.HandleGoogleLogin();
+            naverBtn.Click += (_, _) => OAuthService.HandleNaverLogin();
+            helpBtn.Click += (_, _) => new OAuthSetupForm().ShowDialog();
         }
 
         private void HandleLogin()
@@ -75,7 +74,7 @@ namespace WinFormsApp1.Forms
                 return;
             }
 
-            // TODO: 로그인 로직 연결
+            // TODO: 로그인 처리 로직 연결 예정
             MessageBox.Show($"로그인 시도: {email}", "로그인", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
