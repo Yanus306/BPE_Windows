@@ -24,7 +24,7 @@ namespace WinFormsApp1.Designs
                 TextAlign = ContentAlignment.MiddleCenter
             };
 
-        
+
             loginBtn = new SiticoneButton
             {
                 Text = "Continue with Login",
