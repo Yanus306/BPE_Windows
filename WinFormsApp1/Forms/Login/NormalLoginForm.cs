@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using Siticone.Desktop.UI.WinForms;
 using WinFormsApp1.Designs;
+using WinFormsApp1.Common;
 
 namespace WinFormsApp1.Forms
 {
@@ -47,18 +48,7 @@ namespace WinFormsApp1.Forms
 
         private void SetupEvents()
         {
-            // [기존 코드: 입력값 확인용 메시지박스]
-            /*
-            loginBtn.Click += (s, e) =>
-            {
-                MessageBox.Show(
-                    $"SMTP: {smtpBox.Text}\nIMAP: {imapBox.Text}\n이메일: {emailBox.Text}\n비밀번호: {passBox.Text}",
-                    "입력값 확인");
-            };
-            */
-
-            // [새 코드: 입력값이 모두 채워지면 InboxForm으로 이동]
-            loginBtn.Click += (s, e) =>
+            loginBtn.Click += async (s, e) =>
             {
                 if (string.IsNullOrWhiteSpace(smtpBox.Text) ||
                     string.IsNullOrWhiteSpace(imapBox.Text) ||
@@ -68,10 +58,27 @@ namespace WinFormsApp1.Forms
                     MessageBox.Show("모든 정보를 입력해주세요.", "입력 오류", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                // TODO: 필요시 UserSession 등에 값 저장
+
+                loginBtn.Enabled = false;
+
+                // ✅ 로딩 오버레이 표시
+                using (var loading = new LoadingForm(this, "로그인 중입니다..."))
+                {
+                    loading.Show();
+                    loading.Refresh(); // 강제로 그리기
+
+                    await Task.Delay(1500); // 실제 로그인 처리 위치
+                                            // TODO: EmailService.LoginAsync(...) 등 백엔드 호출 넣을 수 있음
+
+                    loading.Close(); // 완료 후 닫기
+                }
+
+                loginBtn.Enabled = true;
+
                 var inboxForm = new InboxForm();
                 inboxForm.ShowDialog();
             };
         }
+
     }
 }
