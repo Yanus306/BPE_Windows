@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using Siticone.Desktop.UI.WinForms;
 using WinFormsApp1.Designs;
 using WinFormsApp1.Common;
+using WinFormsApp1.Core.Login;
 
 namespace WinFormsApp1.Forms
 {
@@ -63,27 +64,19 @@ namespace WinFormsApp1.Forms
 
                 loginBtn.Enabled = false;
 
-                try
-                {
-                    using (var loading = new LoadingForm(this, "로그인 중입니다..."))
-                    {
+                try {
+                    using (LoadingForm loading = new(this, "로그인 중입니다...")) {
                         loading.Show();
                         loading.Refresh();
 
-                        await Task.Delay(1500); // 실제 로그인 API 호출 자리
-
-                        loading.Close();
+                        await LoginWithProtocol.Login(smtpBox.Text, imapBox.Text, emailBox.Text, passBox.Text);
                     }
 
                     var inboxForm = new InboxForm();
                     inboxForm.ShowDialog();
-                }
-                catch (Exception ex)
-                {
+                } catch (Exception ex) {
                     MessageBox.Show("로그인 중 오류 발생: " + ex.Message, "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                finally
-                {
+                } finally {
                     loginBtn.Enabled = true;
                 }
             };
