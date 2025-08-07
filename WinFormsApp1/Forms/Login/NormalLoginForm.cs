@@ -76,6 +76,7 @@ namespace WinFormsApp1.Forms
                     inboxForm.ShowDialog();
                 } catch (Exception ex) {
                     MessageBox.Show("로그인 중 오류 발생: " + ex.Message, "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Console.WriteLine(ex);
                 } finally {
                     loginBtn.Enabled = true;
                 }

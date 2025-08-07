@@ -27,9 +27,8 @@ public class ProtocolMailHandler : MailHandler, IDisposable, IAsyncDisposable {
         try {
             await handler.ImapClient.AuthenticateAsync(loginData.Id, loginData.Password);
         } catch (Exception e) {
-            throw new LoginException("Failed to authenticate with IMAP server", e);
-        } finally {
             await handler.ImapClient.DisconnectAsync(true);
+            throw new LoginException("Failed to authenticate with IMAP server", e);
         }
         handler._idleTask = Task.Run(handler.RunIdleTask);
         handler.ImapClient.Inbox.CountChanged += handler.OnCountChanged;
