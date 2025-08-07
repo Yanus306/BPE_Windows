@@ -1,4 +1,5 @@
-﻿using MailKit.Net.Imap;
+﻿using MailKit;
+using MailKit.Net.Imap;
 using MimeKit;
 using WinFormsApp1.Core.Login;
 using WinFormsApp1.Data;
@@ -30,6 +31,7 @@ public class ProtocolMailHandler : MailHandler, IDisposable, IAsyncDisposable {
             await handler.ImapClient.DisconnectAsync(true);
             throw new LoginException("Failed to authenticate with IMAP server", e);
         }
+        await handler.ImapClient.Inbox.OpenAsync(FolderAccess.ReadOnly);
         handler._idleTask = Task.Run(handler.RunIdleTask);
         handler.ImapClient.Inbox.CountChanged += handler.OnCountChanged;
         return handler;
@@ -56,7 +58,7 @@ public class ProtocolMailHandler : MailHandler, IDisposable, IAsyncDisposable {
     
     public override List<MailContent> ReadMail(int limit) {
         List<MailContent> mails = [];
-        for(int i = 0; i < ImapClient.Inbox.Count && mails.Count < limit; i++) {
+        for(int i = Math.Max(0, ImapClient.Inbox.Count - limit); i < ImapClient.Inbox.Count; i++) {
             MimeMessage? message = ImapClient.Inbox.GetMessage(i);
             if(message != null) mails.Add(new MailContent(message));
         }
@@ -65,7 +67,7 @@ public class ProtocolMailHandler : MailHandler, IDisposable, IAsyncDisposable {
     
     public override async Task<List<MailContent>> ReadMailAsync(int limit) {
         List<MailContent> mails = [];
-        for(int i = 0; i < ImapClient.Inbox.Count && mails.Count < limit; i++) {
+        for(int i = Math.Max(0, ImapClient.Inbox.Count - limit); i < ImapClient.Inbox.Count; i++) {
             MimeMessage? message = await ImapClient.Inbox.GetMessageAsync(i);
             if(message != null) mails.Add(new MailContent(message));
         }
