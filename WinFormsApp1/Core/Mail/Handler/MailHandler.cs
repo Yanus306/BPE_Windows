@@ -1,16 +1,16 @@
 ﻿namespace WinFormsApp1.Core.Mail.Handler;
 
 public abstract class MailHandler {
-    public abstract void SendMail(Mail mail);
-    public abstract Task SendMailAsync(Mail mail);
-    public abstract List<Mail> ReadMail(int limit);
-    public abstract Task<List<Mail>> ReadMailAsync(int limit);
+    public abstract void SendMail(MailContent mailContent);
+    public abstract Task SendMailAsync(MailContent mailContent);
+    public abstract List<MailContent> ReadMail(int limit);
+    public abstract Task<List<MailContent>> ReadMailAsync(int limit);
 
-    public virtual void OnMailArrived(Mail mail) {
+    public virtual void OnMailArrived(MailContent mailContent) {
         throw new NotImplementedException();
     }
     
-    public virtual void OnMailDeleted(Mail mail) {
+    public virtual void OnMailDeleted(MailContent mailContent) {
         throw new NotImplementedException();
     }
 }

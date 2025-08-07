@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Windows.Forms;
-using WinFormsApp1.Models;
-using WinFormsApp1.Utils;
+﻿using WinFormsApp1.Utils;
 using WinFormsApp1.Utils.Mail;
 
-namespace WinFormsApp1.Forms
+namespace WinFormsApp1.Forms.Mail
 {
     public partial class MailDetailForm : Form
     {
-        private EmailMessage _message;
+        private Core.Mail.MailContent _message;
         private MailHeaderAuthResult? _authResult;
 
-        public MailDetailForm(EmailMessage message)
+        public MailDetailForm(Core.Mail.MailContent message)
         {
             InitializeComponent();
             _message = message;
@@ -21,7 +17,7 @@ namespace WinFormsApp1.Forms
             labelSubject.Text = "제목: " + message.Subject;
             
             // 발신자 정보 파싱 및 표시
-            var senderInfo = WinFormsApp1.Utils.MailSenderParser.Parse(message.From ?? "");
+            var senderInfo = MailSenderParser.Parse(message.From ?? "");
             labelFrom.Text = $"보낸이: {senderInfo.DisplayName ?? "(없음)"} <{senderInfo.Email ?? "?"}>\n도메인: {senderInfo.Domain ?? "?"}";
             
             textBoxBody.Text = message.Body;

@@ -4,8 +4,9 @@ using System.Drawing;
 using System.Windows.Forms;
 using WinFormsApp1.Common;
 using WinFormsApp1.Core.Login;
+using WinFormsApp1.Core.Mail.Handler;
 using WinFormsApp1.Designs;
-using WinFormsApp1.Models;
+using WinFormsApp1.Forms.Mail;
 
 namespace WinFormsApp1.Forms
 {
@@ -71,41 +72,28 @@ namespace WinFormsApp1.Forms
 
                 loginBtn.Enabled = false;
 
-                try
-                {
-                    using (var loading = new LoadingForm(this, "로그인 중입니다..."))
-                    {
+                try {
+                    ProtocolMailHandler handler;
+                    using(LoadingForm loading = new(this, "로그인 중입니다...")) {
                         loading.Show();
                         loading.Refresh();
 
-                        await LoginWithProtocol.Login(
+                        handler = await LoginWithProtocol.Login(
                             smtpBox.Text,
                             imapBox.Text,
                             emailBox.Text,
                             passBox.Text
                         );
                     }
-
-                    // 로그인 성공 시 세션에 저장
-                    UserSession.Email = emailBox.Text;
-                    UserSession.Password = passBox.Text;
-                    UserSession.SmtpServer = smtpBox.Text;
-                    UserSession.ImapServer = imapBox.Text;
-
-                    using var inboxForm = new InboxForm();
-                    inboxForm.ShowDialog();
-                }
-                catch (Exception ex)
-                {
+                    new InboxForm(handler).ShowDialog();
+                } catch (Exception ex) {
                     MessageBox.Show(
                         $"로그인 중 오류 발생:\n{ex.Message}",
                         "오류",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error
                     );
-                }
-                finally
-                {
+                } finally {
                     loginBtn.Enabled = true;
                 }
             };

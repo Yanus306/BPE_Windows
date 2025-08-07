@@ -40,26 +40,36 @@ public class ProtocolMailHandler : MailHandler, IDisposable, IAsyncDisposable {
         if (newCount > _currentCount) {
             for (int i = _currentCount; i < newCount; i++) {
                 MimeMessage? message = ImapClient.Inbox.GetMessage(i);
-                OnMailArrived(new Mail(message));
+                OnMailArrived(new MailContent(message));
             }
             _currentCount = newCount;
         }
     }
     
-    public override void SendMail(Mail mail) {
+    public override void SendMail(MailContent mailContent) {
         throw new NotImplementedException();
     }
     
-    public override Task SendMailAsync(Mail mail) {
+    public override Task SendMailAsync(MailContent mailContent) {
         throw new NotImplementedException();
     }
     
-    public override List<Mail> ReadMail(int limit) {
-        throw new NotImplementedException();
+    public override List<MailContent> ReadMail(int limit) {
+        List<MailContent> mails = [];
+        for(int i = 0; i < ImapClient.Inbox.Count && mails.Count < limit; i++) {
+            MimeMessage? message = ImapClient.Inbox.GetMessage(i);
+            if(message != null) mails.Add(new MailContent(message));
+        }
+        return mails;
     }
     
-    public override Task<List<Mail>> ReadMailAsync(int limit) {
-        throw new NotImplementedException();
+    public override async Task<List<MailContent>> ReadMailAsync(int limit) {
+        List<MailContent> mails = [];
+        for(int i = 0; i < ImapClient.Inbox.Count && mails.Count < limit; i++) {
+            MimeMessage? message = await ImapClient.Inbox.GetMessageAsync(i);
+            if(message != null) mails.Add(new MailContent(message));
+        }
+        return mails;
     }
 
     private async Task RunIdleTask() {

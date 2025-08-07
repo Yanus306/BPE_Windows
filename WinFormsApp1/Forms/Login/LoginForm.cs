@@ -1,10 +1,6 @@
 ﻿// LoginForm.cs (.NET 8 + Siticone 최신 방식 적용 - 중복 제거 및 구조화)
 using Siticone.Desktop.UI.WinForms;
-using System.Drawing;
-using System.Windows.Forms;
 using WinFormsApp1.Designs;
-using WinFormsApp1.Services;
-using NormalLoginForm = WinFormsApp1.Forms.NormalLoginForm;
 
 namespace WinFormsApp1.Forms
 {
@@ -58,8 +54,8 @@ namespace WinFormsApp1.Forms
                 var normalLoginForm = new NormalLoginForm();
                 normalLoginForm.Show();
             };
-            googleBtn.Click += (_, _) => OAuthService.HandleGoogleLogin();
-            naverBtn.Click += (_, _) => OAuthService.HandleNaverLogin();
+            googleBtn.Click += (_, _) => throw new NotImplementedException();
+            naverBtn.Click += (_, _) => throw new NotImplementedException();
             helpBtn.Click += (_, _) => new OAuthSetupForm().ShowDialog();
         }
     }
