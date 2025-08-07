@@ -1,16 +1,9 @@
-using System;
 using System.Diagnostics;
-using System.Drawing;
-using System.Net.Http;
 using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace WinFormsApp1.Forms
-{
-    public class GoogleLoginForm : Form
-    {
+namespace WinFormsApp1.Forms.Login {
+    public class GoogleLoginForm : Form {
         // TODO: 아래 값을 본인 Google API Console에서 발급받은 값으로 변경하세요.
         private const string ClientId = "YOUR_GOOGLE_CLIENT_ID";
         private const string ClientSecret = "YOUR_GOOGLE_CLIENT_SECRET";
@@ -19,21 +12,18 @@ namespace WinFormsApp1.Forms
 
         private Button startGoogleAuthBtn;
 
-        public GoogleLoginForm()
-        {
+        public GoogleLoginForm() {
             this.Size = new Size(400, 200);
             this.StartPosition = FormStartPosition.CenterParent;
             this.Text = "Google 로그인";
 
-            var infoLabel = new Label
-            {
+            var infoLabel = new Label {
                 Text = "Google OAuth2 인증을 시작하려면 아래 버튼을 누르세요.",
                 Location = new Point(30, 30),
                 Size = new Size(340, 30)
             };
 
-            startGoogleAuthBtn = new Button
-            {
+            startGoogleAuthBtn = new Button {
                 Text = "Google 인증 시작",
                 Location = new Point(100, 80),
                 Size = new Size(200, 40)
@@ -44,17 +34,15 @@ namespace WinFormsApp1.Forms
             this.Controls.Add(startGoogleAuthBtn);
         }
 
-        private void StartGoogleAuthBtn_Click(object? sender, EventArgs e)
-        {
-            string authUrl = $"https://accounts.google.com/o/oauth2/v2/auth?client_id={ClientId}&redirect_uri={RedirectUri}&response_type=code&scope={Scope}&access_type=offline";
+        private void StartGoogleAuthBtn_Click(object? sender, EventArgs e) {
+            string authUrl =
+                $"https://accounts.google.com/o/oauth2/v2/auth?client_id={ClientId}&redirect_uri={RedirectUri}&response_type=code&scope={Scope}&access_type=offline";
             Process.Start(new ProcessStartInfo { FileName = authUrl, UseShellExecute = true });
             ShowCodeInputDialog();
         }
 
-        private void ShowCodeInputDialog()
-        {
-            var inputForm = new Form
-            {
+        private void ShowCodeInputDialog() {
+            var inputForm = new Form {
                 Text = "인증 코드 입력",
                 Size = new Size(400, 180),
                 StartPosition = FormStartPosition.CenterParent
@@ -68,20 +56,16 @@ namespace WinFormsApp1.Forms
                 okBtn.Enabled = false;
                 statusLabel.Text = "인증 중...";
                 var code = textBox.Text.Trim();
-                if (string.IsNullOrWhiteSpace(code))
-                {
+                if(string.IsNullOrWhiteSpace(code)) {
                     statusLabel.Text = "코드를 입력하세요.";
                     okBtn.Enabled = true;
                     return;
                 }
                 var result = await ExchangeCodeForToken(code);
-                if (result.success)
-                {
+                if(result.success) {
                     MessageBox.Show("Google 로그인 성공!\nAccess Token: " + result.accessToken, "성공", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     inputForm.Close();
-                }
-                else
-                {
+                } else {
                     statusLabel.Text = "로그인 실패: " + result.error;
                     okBtn.Enabled = true;
                 }
@@ -93,34 +77,25 @@ namespace WinFormsApp1.Forms
             inputForm.ShowDialog(this);
         }
 
-        private async Task<(bool success, string? accessToken, string? error)> ExchangeCodeForToken(string code)
-        {
-            try
-            {
+        private async Task<(bool success, string? accessToken, string? error)> ExchangeCodeForToken(string code) {
+            try {
                 using var client = new HttpClient();
-                var content = new StringContent($"code={code}&client_id={ClientId}&client_secret={ClientSecret}&redirect_uri={RedirectUri}&grant_type=authorization_code", Encoding.UTF8, "application/x-www-form-urlencoded");
+                var content = new StringContent($"code={code}&client_id={ClientId}&client_secret={ClientSecret}&redirect_uri={RedirectUri}&grant_type=authorization_code",
+                    Encoding.UTF8, "application/x-www-form-urlencoded");
                 var response = await client.PostAsync("https://oauth2.googleapis.com/token", content);
                 var body = await response.Content.ReadAsStringAsync();
-                if (!response.IsSuccessStatusCode)
-                {
+                if(!response.IsSuccessStatusCode) {
                     return (false, null, $"HTTP 오류: {response.StatusCode}\n{body}");
                 }
                 using var doc = JsonDocument.Parse(body);
-                if (doc.RootElement.TryGetProperty("access_token", out var tokenElem))
-                {
+                if(doc.RootElement.TryGetProperty("access_token", out var tokenElem)) {
                     return (true, tokenElem.GetString(), null);
-                }
-                else if (doc.RootElement.TryGetProperty("error", out var errElem))
-                {
+                } else if(doc.RootElement.TryGetProperty("error", out var errElem)) {
                     return (false, null, errElem.GetString());
-                }
-                else
-                {
+                } else {
                     return (false, null, "알 수 없는 응답: " + body);
                 }
-            }
-            catch (Exception ex)
-            {
+            } catch (Exception ex) {
                 return (false, null, ex.Message);
             }
         }

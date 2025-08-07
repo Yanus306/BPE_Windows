@@ -9,7 +9,7 @@ public abstract class MailHandler {
     public virtual void OnMailArrived(MailContent mailContent) {
         throw new NotImplementedException();
     }
-    
+
     public virtual void OnMailDeleted(MailContent mailContent) {
         throw new NotImplementedException();
     }

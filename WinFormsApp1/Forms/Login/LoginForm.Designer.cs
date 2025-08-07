@@ -1,7 +1,6 @@
 using System.ComponentModel;
-using System.Windows.Forms;
 
-namespace WinFormsApp1.Forms
+namespace WinFormsApp1.Forms.Login
 {
     public partial class LoginForm : Form
     {

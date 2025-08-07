@@ -1,11 +1,10 @@
 ﻿// LoginForm.cs (.NET 8 + Siticone 최신 방식 적용 - 중복 제거 및 구조화)
+
 using Siticone.Desktop.UI.WinForms;
 using WinFormsApp1.Designs;
 
-namespace WinFormsApp1.Forms
-{
-    public partial class LoginForm : Form
-    {
+namespace WinFormsApp1.Forms.Login {
+    public partial class LoginForm : Form {
         private SiticoneButton loginBtn;
         private SiticoneButton googleBtn;
         private SiticoneButton naverBtn;
@@ -13,27 +12,23 @@ namespace WinFormsApp1.Forms
 
         private SiticoneBorderlessForm borderless;
 
-        public LoginForm()
-        {
+        public LoginForm() {
             InitializeComponent();
             SetupEventHandlers();
         }
 
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             this.Size = new Size(440, 600);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Modern Login";
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
 
-            borderless = new SiticoneBorderlessForm
-            {
+            borderless = new SiticoneBorderlessForm {
                 ContainerControl = this
             };
 
-            var container = new Panel
-            {
+            var container = new Panel {
                 Dock = DockStyle.Fill,
                 BackColor = Color.White
             };
@@ -48,9 +43,9 @@ namespace WinFormsApp1.Forms
             this.Controls.Add(container);
         }
 
-        private void SetupEventHandlers()
-        {
-            loginBtn.Click += (_, _) => {
+        private void SetupEventHandlers() {
+            loginBtn.Click += (_, _) =>
+            {
                 var normalLoginForm = new NormalLoginForm();
                 normalLoginForm.Show();
             };

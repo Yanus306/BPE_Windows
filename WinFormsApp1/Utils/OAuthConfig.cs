@@ -1,10 +1,7 @@
-namespace WinFormsApp1.Utils
-{
-    public static class OAuthConfig
-    {
+namespace WinFormsApp1.Utils {
+    public static class OAuthConfig {
         // Google OAuth 설정
-        public static class Google
-        {
+        public static class Google {
             public const string ClientId = "YOUR_GOOGLE_CLIENT_ID";
             public const string ClientSecret = "YOUR_GOOGLE_CLIENT_SECRET";
             public const string RedirectUri = "http://localhost:8080/callback";
@@ -15,8 +12,7 @@ namespace WinFormsApp1.Utils
         }
 
         // Naver OAuth 설정
-        public static class Naver
-        {
+        public static class Naver {
             public const string ClientId = "YOUR_NAVER_CLIENT_ID";
             public const string ClientSecret = "YOUR_NAVER_CLIENT_SECRET";
             public const string RedirectUri = "http://localhost:8080/callback";
@@ -26,10 +22,8 @@ namespace WinFormsApp1.Utils
         }
 
         // OAuth 설정 가이드
-        public static class SetupGuide
-        {
-            public static string GetGoogleSetupGuide()
-            {
+        public static class SetupGuide {
+            public static string GetGoogleSetupGuide() {
                 return @"Google OAuth 설정 방법:
 
 1. Google Cloud Console (https://console.cloud.google.com/) 접속
@@ -43,8 +37,7 @@ namespace WinFormsApp1.Utils
 주의: 실제 배포 시에는 보안을 위해 환경 변수나 설정 파일을 사용하세요.";
             }
 
-            public static string GetNaverSetupGuide()
-            {
+            public static string GetNaverSetupGuide() {
                 return @"Naver OAuth 설정 방법:
 
 1. Naver Developers (https://developers.naver.com/) 접속
@@ -59,4 +52,4 @@ namespace WinFormsApp1.Utils
             }
         }
     }
-} 
+}

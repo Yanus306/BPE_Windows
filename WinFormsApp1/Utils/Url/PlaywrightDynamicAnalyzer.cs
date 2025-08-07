@@ -1,22 +1,9 @@
-using System.Threading.Tasks;
-using System;
-using System.Linq;
 #if PLAYWRIGHT
 using Microsoft.Playwright;
 #endif
 
-namespace WinFormsApp1.Utils
-{
-    public class DynamicAnalysisResult
-    {
-        public string FinalUrl { get; set; } = string.Empty;
-        public string PageTitle { get; set; } = string.Empty;
-        public bool HasLoginForm { get; set; }
-        public bool HasSuspiciousKeyword { get; set; }
-    }
-
-    public static class PlaywrightDynamicAnalyzer
-    {
+namespace WinFormsApp1.Utils.Url {
+    public static class PlaywrightDynamicAnalyzer {
 #if PLAYWRIGHT
         private static readonly string[] SuspiciousKeywords = new[]
         {
@@ -47,8 +34,7 @@ namespace WinFormsApp1.Utils
             };
         }
 #else
-        public static Task<DynamicAnalysisResult> AnalyzeAsync(string url)
-        {
+        public static Task<DynamicAnalysisResult> AnalyzeAsync(string url) {
             throw new NotImplementedException("Playwright 라이브러리가 필요합니다. NuGet에서 Microsoft.Playwright 설치 후 #define PLAYWRIGHT 추가");
         }
 #endif

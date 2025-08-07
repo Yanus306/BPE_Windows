@@ -2,6 +2,5 @@
 
 public class LoginWithNaver {
     public static async void Login() {
-        
     }
 }

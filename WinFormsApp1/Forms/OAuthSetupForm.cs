@@ -1,25 +1,22 @@
 // OAuthSetupForm.cs (Siticone 기반 - 최신 스타일 적용 및 오류 수정)
+
 using Siticone.Desktop.UI.WinForms;
 using Siticone.Desktop.UI;
 using System.Drawing;
 using System.Windows.Forms;
 using WinFormsApp1.Utils;
 
-namespace WinFormsApp1.Forms
-{
-    public partial class OAuthSetupForm : Form
-    {
+namespace WinFormsApp1.Forms {
+    public partial class OAuthSetupForm : Form {
         private SiticoneTabControl tabControl;
         private SiticoneButton closeButton;
         private SiticoneBorderlessForm borderless;
 
-        public OAuthSetupForm()
-        {
+        public OAuthSetupForm() {
             InitializeComponent();
         }
 
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             this.SuspendLayout();
 
             this.Size = new Size(600, 500);
@@ -29,8 +26,7 @@ namespace WinFormsApp1.Forms
             borderless = new SiticoneBorderlessForm();
             borderless.ContainerControl = this;
 
-            tabControl = new SiticoneTabControl
-            {
+            tabControl = new SiticoneTabControl {
                 Dock = DockStyle.Top,
                 Font = new Font("맑은 고딕", 9),
                 Height = 420
@@ -40,8 +36,7 @@ namespace WinFormsApp1.Forms
             AddTab("Naver OAuth", OAuthConfig.SetupGuide.GetNaverSetupGuide());
             AddTab("설정 파일", GetConfigFileContent());
 
-            closeButton = new SiticoneButton
-            {
+            closeButton = new SiticoneButton {
                 Text = "닫기",
                 Size = new Size(100, 35),
                 Anchor = AnchorStyles.Bottom,
@@ -51,21 +46,16 @@ namespace WinFormsApp1.Forms
 
             closeButton.Click += (sender, e) => this.Close();
 
-            this.Load += (s, e) =>
-            {
-                closeButton.Location = new Point((this.ClientSize.Width - closeButton.Width) / 2, 440);
-            };
+            this.Load += (s, e) => { closeButton.Location = new Point((this.ClientSize.Width - closeButton.Width) / 2, 440); };
 
             this.Controls.Add(tabControl);
             this.Controls.Add(closeButton);
             this.ResumeLayout(false);
         }
 
-        private void AddTab(string title, string content)
-        {
+        private void AddTab(string title, string content) {
             var tab = new TabPage(title);
-            var textBox = new SiticoneTextBox
-            {
+            var textBox = new SiticoneTextBox {
                 Multiline = true,
                 ReadOnly = true,
                 ScrollBars = ScrollBars.Vertical,
@@ -77,10 +67,8 @@ namespace WinFormsApp1.Forms
             tabControl.TabPages.Add(tab);
         }
 
-        private string GetConfigFileContent()
-        {
-            return string.Join("\n", new string[]
-            {
+        private string GetConfigFileContent() {
+            return string.Join("\n", new string[] {
                 "// OAuthConfig.cs 파일에서 설정값을 변경하세요",
                 "",
                 "// namespace WinFormsApp1.Utils",

@@ -1,6 +1,4 @@
-using MailKit.Net.Imap;
 using MailKit.Net.Smtp;
-using WinFormsApp1.Core.Login;
 using WinFormsApp1.Data;
 using WinFormsApp1.Core.Mail.Handler;
 
@@ -18,7 +16,8 @@ public class LoginWithProtocol {
                 await smtpClient.AuthenticateAsync(id, password);
             } catch (Exception e) {
                 throw new LoginException("Failed to authenticate with SMTP server", e);
-            } finally {
+            }
+            finally {
                 await smtpClient.DisconnectAsync(true);
             }
         }

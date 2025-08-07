@@ -1,9 +1,6 @@
-﻿namespace WinFormsApp1.Forms
-{
-    public partial class SettingsForm : Form
-    {
-        public SettingsForm()
-        {
+﻿namespace WinFormsApp1.Forms.Settings {
+    public partial class SettingsForm : Form {
+        public SettingsForm() {
             InitializeComponent();
             buttonSave.Click += (s, e) => MessageBox.Show("저장 완료");
         }
