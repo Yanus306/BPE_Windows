@@ -1,4 +1,6 @@
-﻿namespace WinFormsApp1.Models
+﻿using System.Collections.Generic;
+
+namespace WinFormsApp1.Models
 {
     public class EmailMessage
     {
@@ -6,5 +8,6 @@
         public string? Subject { get; set; }
         public string? Body { get; set; }
         public DateTime Date { get; set; }
+        public Dictionary<string, string>? Headers { get; set; }
     }
 }

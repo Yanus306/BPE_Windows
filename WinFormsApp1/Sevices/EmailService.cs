@@ -5,6 +5,7 @@ using MailKit.Search;
 using MailKit.Security;
 using MimeKit;
 using WinFormsApp1.Models;
+using System.Collections.Generic;
 
 namespace WinFormsApp1.Services
 {
@@ -32,17 +33,34 @@ namespace WinFormsApp1.Services
             foreach (var uid in uids.Reverse().Take(20))
             {
                 var message = inbox.GetMessage(uid);
-                messages.Add(new EmailMessage
+                var emailMessage = new EmailMessage
                 {
                     From = message.From.ToString(),
                     Subject = message.Subject,
                     Body = message.TextBody,
                     Date = message.Date.DateTime
-                });
+                };
+                
+                // 메일 헤더 정보 저장
+                emailMessage.Headers = ExtractHeaders(message);
+                
+                messages.Add(emailMessage);
             }
 
             client.Disconnect(true);
             return messages;
+        }
+
+        private Dictionary<string, string> ExtractHeaders(MimeMessage message)
+        {
+            var headers = new Dictionary<string, string>();
+            
+            foreach (var header in message.Headers)
+            {
+                headers[header.Field] = header.Value;
+            }
+            
+            return headers;
         }
     }
 }

@@ -30,6 +30,10 @@ namespace WinFormsApp1.Forms
             this.labelSubject = new System.Windows.Forms.Label();
             this.labelFrom = new System.Windows.Forms.Label();
             this.textBoxBody = new System.Windows.Forms.TextBox();
+            this.groupBoxAuth = new System.Windows.Forms.GroupBox();
+            this.labelAuthStatus = new System.Windows.Forms.Label();
+            this.buttonViewAuthDetails = new System.Windows.Forms.Button();
+            this.groupBoxAuth.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelSubject
@@ -51,14 +55,44 @@ namespace WinFormsApp1.Forms
             this.labelFrom.TabIndex = 1;
             this.labelFrom.Text = "보낸이: ";
             // 
+            // groupBoxAuth
+            // 
+            this.groupBoxAuth.Controls.Add(this.labelAuthStatus);
+            this.groupBoxAuth.Controls.Add(this.buttonViewAuthDetails);
+            this.groupBoxAuth.Location = new System.Drawing.Point(20, 80);
+            this.groupBoxAuth.Name = "groupBoxAuth";
+            this.groupBoxAuth.Size = new System.Drawing.Size(560, 80);
+            this.groupBoxAuth.TabIndex = 3;
+            this.groupBoxAuth.TabStop = false;
+            this.groupBoxAuth.Text = "🔐 메일 인증 분석";
+            // 
+            // labelAuthStatus
+            // 
+            this.labelAuthStatus.AutoSize = true;
+            this.labelAuthStatus.Font = new System.Drawing.Font("맑은 고딕", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelAuthStatus.Location = new System.Drawing.Point(15, 25);
+            this.labelAuthStatus.Name = "labelAuthStatus";
+            this.labelAuthStatus.Size = new System.Drawing.Size(120, 17);
+            this.labelAuthStatus.TabIndex = 0;
+            this.labelAuthStatus.Text = "분석 중...";
+            // 
+            // buttonViewAuthDetails
+            // 
+            this.buttonViewAuthDetails.Location = new System.Drawing.Point(15, 45);
+            this.buttonViewAuthDetails.Name = "buttonViewAuthDetails";
+            this.buttonViewAuthDetails.Size = new System.Drawing.Size(120, 25);
+            this.buttonViewAuthDetails.TabIndex = 1;
+            this.buttonViewAuthDetails.Text = "상세 분석 보기";
+            this.buttonViewAuthDetails.UseVisualStyleBackColor = true;
+            // 
             // textBoxBody
             // 
-            this.textBoxBody.Location = new System.Drawing.Point(20, 80);
+            this.textBoxBody.Location = new System.Drawing.Point(20, 170);
             this.textBoxBody.Multiline = true;
             this.textBoxBody.Name = "textBoxBody";
             this.textBoxBody.ReadOnly = true;
             this.textBoxBody.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxBody.Size = new System.Drawing.Size(560, 320);
+            this.textBoxBody.Size = new System.Drawing.Size(560, 230);
             this.textBoxBody.TabIndex = 2;
             // 
             // MailDetailForm
@@ -66,12 +100,15 @@ namespace WinFormsApp1.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 420);
+            this.Controls.Add(this.groupBoxAuth);
             this.Controls.Add(this.textBoxBody);
             this.Controls.Add(this.labelFrom);
             this.Controls.Add(this.labelSubject);
             this.Name = "MailDetailForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "메일 상세보기";
+            this.groupBoxAuth.ResumeLayout(false);
+            this.groupBoxAuth.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,5 +119,8 @@ namespace WinFormsApp1.Forms
         private System.Windows.Forms.Label labelSubject;
         private System.Windows.Forms.Label labelFrom;
         private System.Windows.Forms.TextBox textBoxBody;
+        private System.Windows.Forms.GroupBox groupBoxAuth;
+        private System.Windows.Forms.Label labelAuthStatus;
+        private System.Windows.Forms.Button buttonViewAuthDetails;
     }
 } 
